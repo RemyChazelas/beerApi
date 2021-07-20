@@ -1,0 +1,11 @@
+.beer-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(194, 206, 172);
+    margin: 10px;
+}
+
+.beer-card img {
+    width: 200px;
+}
