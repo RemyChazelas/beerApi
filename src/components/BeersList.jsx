@@ -6,7 +6,7 @@ const BeersList = () => {
     const [page, setPage] = useState(1);
 
     useEffect(() => {
-        fetch(`https://api.punkapi.com/v2/beers?page=${page}&per_page=80`)
+        fetch(`https://api.punkapi.com/v2/beers?page=${page}&per_page=15`)
             .then(response => response.json())
             .then(data => setBeers(data))
     }, [page])

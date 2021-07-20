@@ -1,6 +1,29 @@
+* {
+  background-color: #000000;
+  color: aliceblue;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a{
+  text-decoration: none;
+}
+
+li a:hover{
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 h1 {
-  font-size: 25px;
+  font-size: 2em;
   margin: 12px;
-  color: rgb(86, 86, 86);
+  color: rgb(207, 219, 203);
   text-align: center;
 }

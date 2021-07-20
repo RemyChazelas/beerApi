@@ -9,9 +9,11 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-
-        <nav>
-          <ul>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <nav >
+          <ul className='nav'>
             <li>
               <Link to="/">homepage</Link>
             </li>
@@ -20,11 +22,7 @@ function App() {
             </li>
           </ul>
         </nav>
-
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
           <Route exact path="/beers">
             <BeersList />
           </Route>

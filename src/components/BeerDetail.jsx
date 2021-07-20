@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import "./BeerDetail.css";
 
 const BeerDetail = () => {
     const { id } = useParams();
@@ -17,7 +18,7 @@ const BeerDetail = () => {
                 <div>
                     <h3>{beer.name}</h3>
                     <p>{beer.tagline}</p>
-                    <img src={beer.image_url} alt={`image of ${beer.name} in detail page`} />
+                    <img className='img-beer-detail' src={beer.image_url} alt={`${beer.name} in detail page`} />
                 </div>
             }
         </>
